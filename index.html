@@ -3,187 +3,296 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gáldar FS Store — Camisetas Oficiales</title>
-  <meta name="description" content="Tienda oficial de camisetas. Compra rápida y segura, sin registro. Pago con PayPal." />
+  <title>AIMX Esports — Fortnite Competitive</title>
+  <meta name="description" content="AIMX Esports · Organización española de esports enfocada en el talento competitivo de Fortnite. Compete. Improve. Dominate." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%95%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a0a0b'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-size='52' font-family='Arial Black,sans-serif' font-weight='900' fill='%23fff'%3EA%3C/text%3E%3Ccircle cx='78' cy='66' r='6' fill='%23e50914'/%3E%3C/svg%3E" />
 </head>
 <body>
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand">
-        <span class="brand-mark">GF</span>
-        <span class="brand-text">Gáldar FS <em>Store</em></span>
-      </a>
+      <a href="#home" class="brand">AIMX<span class="dot">.</span></a>
       <nav class="main-nav">
-        <a href="#productos">Camisetas</a>
-        <a href="#como-comprar">Cómo comprar</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#academy">ACADEMY</a>
+        <a href="#staff">STAFF</a>
+        <a href="#competitive">COMPETITIVE</a>
+        <a href="#shop">SHOP</a>
+        <a href="#news">NEWS</a>
+        <a href="#join">JOIN</a>
       </nav>
-      <button id="open-cart" class="cart-btn" aria-label="Abrir carrito">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <span id="cart-count" class="cart-count">0</span>
-      </button>
+      <div class="header-actions">
+        <button id="open-cart" class="cart-btn" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span>CART</span><span id="cart-count" class="cart-count">0</span>
+        </button>
+        <a href="#shop" class="btn btn-red btn-sm">SHOP NOW</a>
+      </div>
     </div>
   </header>
 
   <!-- ===== Hero ===== -->
-  <section id="inicio" class="hero">
+  <section id="home" class="hero">
+    <span class="hero-watermark" aria-hidden="true">AIMX</span>
     <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Temporada 2025 / 2026</p>
-        <h1>Luce los colores<br />del equipo</h1>
-        <p class="lead">Camisetas oficiales de alta calidad. Compra en menos de un minuto, <strong>sin necesidad de registrarte</strong>. Pago seguro con PayPal.</p>
-        <div class="hero-actions">
-          <a href="#productos" class="btn btn-primary">Ver camisetas</a>
-          <a href="#como-comprar" class="btn btn-ghost">Cómo funciona</a>
+      <p class="eyebrow">SPANISH ESPORTS ORGANIZATION &nbsp;•&nbsp; FORTNITE COMPETITIVE</p>
+      <h1 class="display"><span class="w">AIMX</span><br /><span class="r">ESPORTS</span></h1>
+      <p class="hero-tag">COMPETE. IMPROVE. DOMINATE.</p>
+      <p class="hero-desc">Organización española de esports enfocada en el talento competitivo de Fortnite.</p>
+      <div class="hero-actions">
+        <a href="#academy" class="btn btn-red">ROSTER</a>
+        <a href="#shop" class="btn btn-dark">SHOP</a>
+        <a href="#join" class="btn btn-dark">JOIN AIMX</a>
+        <a href="#socials" class="btn btn-dark">DISCORD</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Academy ===== -->
+  <section id="academy" class="section">
+    <div class="container">
+      <div class="head-row">
+        <div>
+          <p class="eyebrow">AIMX ACADEMY</p>
+          <h2 class="display sm"><span class="w">THE NEXT</span><br /><span class="r">GENERATION</span></h2>
+        </div>
+        <p class="head-desc">Developing the next generation of competitive Fortnite players. Roster oficial de AIMX Academy.</p>
+      </div>
+      <div id="roster-grid" class="roster-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Staff ===== -->
+  <section id="staff" class="section section-line">
+    <div class="container">
+      <p class="eyebrow">AIMX STAFF</p>
+      <h2 class="display sm"><span class="w">THE</span> <span class="r">TEAM</span></h2>
+      <div id="staff-grid" class="roster-grid staff-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Competitive ===== -->
+  <section id="competitive" class="section">
+    <div class="container">
+      <p class="eyebrow">AIMX COMPETITIVE</p>
+      <h2 class="display sm"><span class="w">PLAY TO</span> <span class="r">WIN</span></h2>
+      <div class="comp-grid">
+        <article class="comp-card"><span class="comp-n">01</span><h3>Fortnite</h3><p>Competitive</p></article>
+        <article class="comp-card"><span class="comp-n">02</span><h3>FNCS</h3><p>Major events</p></article>
+        <article class="comp-card"><span class="comp-n">03</span><h3>Victory Cups</h3><p>Tournaments</p></article>
+        <article class="comp-card"><span class="comp-n">04</span><h3>Divisional</h3><p>Cups</p></article>
+        <article class="comp-card"><span class="comp-n">05</span><h3>Results</h3><p>Track progress</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Shop ===== -->
+  <section id="shop" class="section section-line">
+    <div class="container">
+      <p class="eyebrow">AIMX SHOP</p>
+      <h2 class="display sm"><span class="w">OFFICIAL</span> <span class="r">MERCH</span></h2>
+      <div class="shop-inner">
+        <div class="shop-media">
+          <div class="merch-poster">
+            <span class="mp-top">NEW MERCH</span>
+            <div class="mp-jersey">
+              <svg viewBox="0 0 200 210" width="220" height="230" aria-label="AIMX Red Jersey">
+                <path d="M40 42 L74 26 Q100 52 126 26 L160 42 L142 82 L124 74 L124 188 L76 188 L76 74 L58 82 Z" fill="#141416" stroke="#e50914" stroke-width="3"/>
+                <path d="M76 74 L76 188 L100 188 L100 62 Z" fill="#e50914" opacity=".85"/>
+                <path d="M74 26 Q100 52 126 26" fill="none" stroke="#e50914" stroke-width="3"/>
+                <text x="100" y="150" text-anchor="middle" font-size="30" font-weight="900" fill="#fff" font-family="Arial Black,sans-serif">AIMX</text>
+              </svg>
+            </div>
+            <span class="mp-sub">AIMX ESPORTS · 2026</span>
+            <span class="mp-badge">OFFICIAL · LIMITED EDITION</span>
+          </div>
+        </div>
+        <div class="shop-info">
+          <h3 class="product-title">AIMX RED JERSEY</h3>
+          <p class="product-desc">Official AIMX Esports Jersey. Selecciona tu talla y añade la camiseta al carrito. El checkout está preparado para pagar con <strong>PayPal</strong> sin necesidad de iniciar sesión.</p>
+          <div class="product-price">€29.99</div>
+
+          <div class="opt-block">
+            <span class="opt-label">TALLA</span>
+            <div id="size-pills" class="size-pills">
+              <button class="size-pill" data-size="XS">XS</button>
+              <button class="size-pill" data-size="S">S</button>
+              <button class="size-pill is-active" data-size="M">M</button>
+              <button class="size-pill" data-size="L">L</button>
+              <button class="size-pill" data-size="XL">XL</button>
+              <button class="size-pill" data-size="XXL">XXL</button>
+            </div>
+          </div>
+
+          <div class="opt-block">
+            <span class="opt-label">CANTIDAD</span>
+            <div class="qty-ctrl">
+              <button id="qty-minus" aria-label="Menos">−</button>
+              <input id="qty-input" type="number" min="1" value="1" aria-label="Cantidad" />
+              <button id="qty-plus" aria-label="Más">+</button>
+            </div>
+          </div>
+
+          <div class="shop-actions">
+            <button id="buy-now" class="btn btn-red">BUY NOW</button>
+            <button id="add-cart" class="btn btn-dark">ADD TO CART</button>
+          </div>
+          <p class="fineprint">El pago se realiza con PayPal a la cuenta de la tienda. Compra sin registro: solo rellenas tus datos de envío.</p>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 300 320" width="320" height="340">
-          <defs>
-            <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ff5a3c"/><stop offset="1" stop-color="#ffb03c"/>
-            </linearGradient>
-          </defs>
-          <path d="M60 60 L110 40 Q150 75 190 40 L240 60 L215 110 L190 100 L190 280 L110 280 L110 100 L85 110 Z" fill="url(#hg)"/>
-          <text x="150" y="200" text-anchor="middle" font-size="64" font-weight="800" fill="#0b1b3a" font-family="system-ui">10</text>
-        </svg>
-      </div>
     </div>
   </section>
 
-  <!-- ===== Productos ===== -->
-  <section id="productos" class="section">
+  <!-- ===== News ===== -->
+  <section id="news" class="section">
     <div class="container">
-      <div class="section-head">
-        <h2>Nuestras camisetas</h2>
-        <p>Elige tu modelo, talla y cantidad. Se añadirá a tu carrito.</p>
+      <p class="eyebrow">AIMX NEWS</p>
+      <h2 class="display sm"><span class="w">LATEST</span> <span class="r">NEWS</span></h2>
+      <div class="news-grid">
+        <a href="#shop" class="news-card"><span class="news-big">NEW DROP</span><span class="news-tag">2026 · MERCH</span><h3>AIMX RED JERSEY</h3><p>Presentamos el nuevo drop oficial de AIMX.</p></a>
+        <a href="#academy" class="news-card"><span class="news-big">ACADEMY</span><span class="news-tag">2026 · ROSTER</span><h3>THE NEXT GENERATION</h3><p>Conoce el roster oficial de AIMX Academy.</p></a>
+        <a href="#competitive" class="news-card"><span class="news-big">COMPETE</span><span class="news-tag">2026 · COMPETITIVE</span><h3>AIMX COMPETITIVE</h3><p>Resultados, torneos y próximos objetivos.</p></a>
       </div>
-      <div id="product-grid" class="product-grid"><!-- productos generados por JS --></div>
     </div>
   </section>
 
-  <!-- ===== Cómo comprar ===== -->
-  <section id="como-comprar" class="section section-alt">
+  <!-- ===== Stats ===== -->
+  <section class="section section-line">
     <div class="container">
-      <div class="section-head">
-        <h2>Cómo comprar</h2>
-        <p>Rápido, sencillo y sin crear ninguna cuenta.</p>
+      <p class="eyebrow">NUMBERS</p>
+      <h2 class="display sm"><span class="w">AIMX</span> <span class="r">STATS</span></h2>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-n">4</span><span class="stat-l">ACADEMY PLAYERS</span></div>
+        <div class="stat-card"><span class="stat-n">1</span><span class="stat-l">COACH</span></div>
+        <div class="stat-card"><span class="stat-n">1</span><span class="stat-l">CEO</span></div>
+        <div class="stat-card"><span class="stat-n">10</span><span class="stat-l">STAFF</span></div>
+        <div class="stat-card"><span class="stat-n">10+</span><span class="stat-l">TOURNAMENT WINS</span></div>
       </div>
-      <ol class="steps">
-        <li><span class="step-n">1</span><h3>Elige tu camiseta</h3><p>Selecciona modelo, talla y cantidad y añádela al carrito.</p></li>
-        <li><span class="step-n">2</span><h3>Rellena tus datos</h3><p>Completa el formulario de envío. No hace falta registrarse.</p></li>
-        <li><span class="step-n">3</span><h3>Paga con PayPal</h3><p>Al confirmar, se abre PayPal para enviar el importe y se inicia tu pedido.</p></li>
-      </ol>
     </div>
   </section>
 
-  <!-- ===== Contacto ===== -->
-  <section id="contacto" class="section">
-    <div class="container contact-inner">
-      <div>
-        <h2>¿Dudas con tu pedido?</h2>
-        <p>Escríbenos y te ayudamos con tu compra, tallas o envíos.</p>
+  <!-- ===== Socials ===== -->
+  <section id="socials" class="section">
+    <div class="container">
+      <h2 class="display sm"><span class="w">OUR</span> <span class="r">SOCIALS</span></h2>
+      <div class="socials-row">
+        <a href="#" class="social-btn">X / TWITTER</a>
+        <a href="#" class="social-btn">TWITCH</a>
+        <a href="#" class="social-btn">TIKTOK</a>
+        <a href="#" class="social-btn">DISCORD</a>
+        <a href="#join" class="social-btn">JOIN AIMX</a>
       </div>
-      <a class="btn btn-primary" href="mailto:xsonicx2010@gmail.com">Contactar por email</a>
+    </div>
+  </section>
+
+  <!-- ===== Join / Recruitment ===== -->
+  <section id="join" class="section section-line">
+    <div class="container">
+      <div class="head-row">
+        <div>
+          <p class="eyebrow">RECRUITMENT</p>
+          <h2 class="display sm"><span class="w">JOIN</span> <span class="r">AIMX</span></h2>
+        </div>
+        <p class="head-desc">Think you have what it takes to compete with AIMX?</p>
+      </div>
+      <form id="join-form" class="join-form" novalidate>
+        <div class="jf-grid">
+          <label>NOMBRE<input type="text" name="nombre" placeholder="Tu nombre" required /></label>
+          <label>EPIC GAMES ID<input type="text" name="epic" placeholder="Epic ID" /></label>
+          <label>EDAD<input type="number" name="edad" placeholder="16" min="10" /></label>
+          <label>PAÍS<input type="text" name="pais" placeholder="España" /></label>
+          <label>REGIÓN
+            <select name="region">
+              <option>EU</option><option>NAE</option><option>NAW</option><option>BR</option><option>OCE</option><option>ME</option><option>ASIA</option>
+            </select>
+          </label>
+          <label>DISCORD<input type="text" name="discord" placeholder="usuario#0000" /></label>
+          <label>TWITTER / X<input type="text" name="twitter" placeholder="@usuario" /></label>
+          <label>TRACKER / PERFIL COMPETITIVO<input type="text" name="tracker" placeholder="Enlace a tu perfil" /></label>
+        </div>
+        <label class="jf-full">LOGROS COMPETITIVOS<input type="text" name="logros" placeholder="FNCS, Cash Cups, Victory Cups..." /></label>
+        <label class="jf-full">MENSAJE<textarea name="mensaje" rows="4" placeholder="Cuéntanos por qué deberías entrar en AIMX..."></textarea></label>
+        <p id="join-msg" class="form-note" hidden></p>
+        <button type="submit" id="apply-btn" class="btn btn-red btn-block">APPLY NOW</button>
+      </form>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Gáldar FS Store</span>
-      <span class="footer-secure">🔒 Pago seguro con PayPal · Sin registro</span>
+      <div class="footer-brand">
+        <span class="brand">AIMX<span class="dot">.</span></span>
+        <p>COMPETE. IMPROVE. DOMINATE.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#home">Home</a><a href="#academy">Academy</a><a href="#competitive">Competitive</a>
+        <a href="#shop">Shop</a><a href="#news">News</a><a href="#join">Join AIMX</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> AIMX Esports. All Rights Reserved.</span>
+      <span>Fortnite Competitive • Spain</span>
     </div>
   </footer>
 
-  <!-- ===== Carrito (drawer) ===== -->
+  <!-- ===== Cart drawer ===== -->
   <div id="cart-overlay" class="overlay" hidden></div>
   <aside id="cart-drawer" class="cart-drawer" aria-label="Carrito" hidden>
     <div class="cart-head">
-      <h3>Tu carrito</h3>
+      <div><p class="eyebrow">AIMX SHOP</p><h3 class="display xs">YOUR CART</h3></div>
       <button id="close-cart" class="icon-btn" aria-label="Cerrar">✕</button>
     </div>
     <div id="cart-items" class="cart-items"></div>
     <div class="cart-foot">
-      <div class="cart-total"><span>Total</span><strong id="cart-total">0,00 €</strong></div>
-      <button id="go-checkout" class="btn btn-primary btn-block" disabled>Continuar la compra</button>
+      <div class="cart-total"><span>TOTAL</span><strong id="cart-total">€0.00</strong></div>
+      <button id="go-checkout" class="btn btn-red btn-block" disabled>PROCEED TO CHECKOUT</button>
     </div>
   </aside>
 
-  <!-- ===== Checkout (modal) ===== -->
+  <!-- ===== Checkout modal ===== -->
   <div id="checkout-overlay" class="overlay" hidden></div>
   <div id="checkout-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" hidden>
     <div class="modal-inner">
       <button id="close-checkout" class="icon-btn modal-close" aria-label="Cerrar">✕</button>
-      <h2 id="checkout-title">Finalizar compra</h2>
-      <p class="modal-sub">Rellena tus datos de envío. No necesitas cuenta. El importe se paga con PayPal.</p>
+      <p class="eyebrow">CHECKOUT</p>
+      <h2 id="checkout-title" class="display xs">TUS DATOS DE ENVÍO</h2>
+      <p class="modal-sub">Sin registro. Rellena tus datos, el pedido se envía al equipo y pagas con PayPal.</p>
 
       <div class="order-summary">
-        <h4>Resumen del pedido</h4>
         <div id="summary-items"></div>
-        <div class="summary-total"><span>Total a pagar</span><strong id="summary-total">0,00 €</strong></div>
+        <div class="summary-total"><span>TOTAL</span><strong id="summary-total">€0.00</strong></div>
       </div>
 
       <form id="checkout-form" novalidate>
         <div class="grid-2">
-          <label>Nombre completo *
-            <input type="text" name="nombre" autocomplete="name" required />
-          </label>
-          <label>Email *
-            <input type="email" name="email" autocomplete="email" required />
-          </label>
+          <label>NOMBRE COMPLETO *<input type="text" name="nombre" autocomplete="name" required /></label>
+          <label>EMAIL *<input type="email" name="email" autocomplete="email" required /></label>
         </div>
         <div class="grid-2">
-          <label>Teléfono *
-            <input type="tel" name="telefono" autocomplete="tel" required />
-          </label>
-          <label>DNI / NIF (opcional)
-            <input type="text" name="dni" />
-          </label>
+          <label>TELÉFONO *<input type="tel" name="telefono" autocomplete="tel" required /></label>
+          <label>DNI / NIF (opcional)<input type="text" name="dni" /></label>
         </div>
-        <label>Dirección (calle y número) *
-          <input type="text" name="direccion" autocomplete="street-address" required />
-        </label>
+        <label>DIRECCIÓN (calle y número) *<input type="text" name="direccion" autocomplete="street-address" required /></label>
         <div class="grid-3">
-          <label>Código postal *
-            <input type="text" name="cp" autocomplete="postal-code" inputmode="numeric" required />
-          </label>
-          <label>Ciudad *
-            <input type="text" name="ciudad" autocomplete="address-level2" required />
-          </label>
-          <label>Provincia *
-            <input type="text" name="provincia" autocomplete="address-level1" required />
-          </label>
+          <label>CÓD. POSTAL *<input type="text" name="cp" autocomplete="postal-code" inputmode="numeric" required /></label>
+          <label>CIUDAD *<input type="text" name="ciudad" autocomplete="address-level2" required /></label>
+          <label>PROVINCIA *<input type="text" name="provincia" autocomplete="address-level1" required /></label>
         </div>
-        <label>País *
-          <input type="text" name="pais" autocomplete="country-name" value="España" required />
-        </label>
-        <label>Notas para el pedido (opcional)
-          <textarea name="notas" rows="2" placeholder="Ej. dorsal, nombre a estampar, indicaciones de entrega..."></textarea>
-        </label>
-
-        <label class="check">
-          <input type="checkbox" name="acepto" required />
-          <span>Confirmo que mis datos son correctos y acepto continuar con el pago por PayPal.</span>
-        </label>
-
-        <p id="form-error" class="form-error" hidden></p>
-
-        <button type="submit" id="pay-btn" class="btn btn-paypal btn-block">
-          Pagar con PayPal <strong id="pay-amount"></strong>
-        </button>
-        <p class="pay-note">Al pulsar se enviará tu pedido y se abrirá PayPal para completar el pago a nombre de la tienda.</p>
+        <label>PAÍS *<input type="text" name="pais" autocomplete="country-name" value="España" required /></label>
+        <label>NOTAS (opcional)<textarea name="notas" rows="2" placeholder="Talla, indicaciones de entrega..."></textarea></label>
+        <label class="check"><input type="checkbox" name="acepto" required /><span>Confirmo que mis datos son correctos y acepto continuar con el pago por PayPal.</span></label>
+        <p id="form-error" class="form-note" hidden></p>
+        <button type="submit" id="pay-btn" class="btn btn-paypal btn-block">PAGAR CON PAYPAL <strong id="pay-amount"></strong></button>
+        <p class="fineprint center">Se enviará tu pedido y se abrirá PayPal para completar el pago a la tienda.</p>
       </form>
     </div>
   </div>
 
-  <!-- ===== Toast ===== -->
   <div id="toast" class="toast" hidden></div>
-
   <script src="script.js"></script>
 </body>
 </html>
